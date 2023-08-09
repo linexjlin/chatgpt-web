@@ -2316,11 +2316,11 @@
                         </svg>
                     </div>
                 </div>
-                <div class="divider"></div>
+                <!--div class="divider"></div>
                 <div class="links">
                     <a href="https://github.com/xqdoo00o/chatgpt-web" target="_blank"
                         rel="noopener noreferrer">Github</a>
-                </div>
+                </div-->
             </div>
         </nav>
         <div class="mainContent">
@@ -5718,7 +5718,7 @@
                 })
             }
             let localAvatar = localStorage.getItem("userAvatar");
-            userAvatar = setAvatarPre.src = setAvatar.value = localAvatar || setAvatar.getAttribute("value") || "https://cdn.jsdelivr.net/gh/xqdoo00o/chatgpt-web@master/avatar.jpg";
+            userAvatar = setAvatarPre.src = setAvatar.value = localAvatar || setAvatar.getAttribute("value") || "people.png";
             setAvatar.onchange = () => {
                 userAvatar = setAvatar.value;
                 localStorage.setItem("userAvatar", userAvatar);
