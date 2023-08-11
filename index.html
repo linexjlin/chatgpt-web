@@ -2937,7 +2937,7 @@
         const isMobile = navigator.userAgent.match(/iPhone|iPad|iPod|Android|BlackBerry|webOS/);
         if (isMobile) {
             const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/gh/timruffles/mobile-drag-drop@3.0.0-rc.0/release/index.min.js";
+            script.src = "js/index.min.js";
             script.crossOrigin = "anonymous";
             script.defer = true;
             script.onload = () => {
@@ -2947,7 +2947,7 @@
             const link = document.createElement("link");
             link.crossOrigin = "anonymous";
             link.rel = "stylesheet";
-            link.href = "https://cdn.jsdelivr.net/gh/timruffles/mobile-drag-drop@3.0.0-rc.0/release/default.css";
+            link.href = "css/default.css";
             document.body.appendChild(link);
         }
         let envAPIEndpoint, envAPIKey;
@@ -6873,10 +6873,10 @@
             }
         }
     </script>
-    <link crossorigin="anonymous" href="//cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
+    <link crossorigin="anonymous" href="css/github.min.css"
         rel="stylesheet">
-    <link crossorigin="anonymous" href="//cdn.staticfile.org/KaTeX/0.16.7/katex.min.css" rel="stylesheet">
-    <link crossorigin="anonymous" href="//npm.elemecdn.com/markdown-it-texmath@1.0.0/css/texmath.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="css/katex.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="css/texmath.css" rel="stylesheet">
     <script defer>
         let downRoleController = new AbortController();
         const loadPrompt = () => {
